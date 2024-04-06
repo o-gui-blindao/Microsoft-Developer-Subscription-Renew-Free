@@ -51,7 +51,6 @@ jobs:
       run: | 
         echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
         python3 temp.py
-        git pull
     - name: Delete secrets config #Delete secret config
       run: | 
         rm -f temp.py
